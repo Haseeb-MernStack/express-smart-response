@@ -1,0 +1,41 @@
+{
+  "name": "express-smart-response",
+  "version": "1.0.0",
+  "description": "Simple typed helpers to produce consistent API responses in Express (success / error / wrap).",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "express",
+    "response",
+    "api",
+    "middleware",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "Haseeb MernStack",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf lib",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.9.1",
+    "@types/supertest": "^6.0.3",
+    "eslint": "^9.38.0",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}
